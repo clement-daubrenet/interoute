@@ -3,7 +3,6 @@ import os
 from flask import Flask
 from werkzeug.utils import import_string
 from . import config, db, io
-from flask_cors import CORS
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +27,6 @@ def create_app(environment):
 
     db.init_app(app)
     io.init_app(app)
-    CORS(app)
 
     return app
 
