@@ -2,10 +2,11 @@
 
 * Flask REST API
 * 2 endpoints : contacts and groups
-/add to add a specific entry
-/get to get a specific entry
-/update/<uuid> to update a specific entry
-/getall to get all the entries
+
+- /add to add a specific entry
+- /get to get a specific entry
+- /update/<uuid> to update a specific entry
+- /getall to get all the entries
 
 ### Running on development machine
 
