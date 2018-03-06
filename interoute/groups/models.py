@@ -1,8 +1,6 @@
 from .. import db, Base
 from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import relationship
 from sqlalchemy import Column, DateTime, ForeignKey, String, text
-from datetime import datetime
 
 
 class Group(db.Model):

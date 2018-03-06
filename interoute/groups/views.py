@@ -1,5 +1,4 @@
 from flask import Blueprint
-from flask_io import fields
 from uuid import uuid4
 from .models import Group
 from .schemas import GroupSchema
