@@ -31,6 +31,13 @@ def add_contact(contact):
     return contact
 
 
+@app.route('/delete/<uuid:contact_id>', methods=['DELETE'])
+def delete_contact(contact_id):
+    contact = Contact.query.filter(Contact.id == str(contact_id)).first()
+    db.session.delete(contact)
+    db.session.commit()
+
+
 @app.route('/update/<uuid:contact_id>', methods=['PATCH', 'POST'])
 @io.from_body('contact_data', ContactSchema(partial=True))
 @io.marshal_with(ContactSchema)
