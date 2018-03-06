@@ -1,0 +1,8 @@
+flask==0.12.2
+flask-io==1.10.0
+flask-sqlalchemy==2.1
+sqlalchemy-utils==0.31.6
+psycopg2==2.6.1
+flask_script
+flask-apidoc
+dictalchemy
